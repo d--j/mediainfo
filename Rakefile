@@ -60,4 +60,8 @@ task :fixture do
   end
 end
 
-require 'github/pages/tasks'
+begin
+  require 'github/pages/tasks'
+rescue LoadError
+  puts "github pages gem not installed"
+end
