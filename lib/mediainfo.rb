@@ -181,6 +181,7 @@ class Mediainfo
   alias_method :audio_sample_bit_depth, :audio_resolution
   
   mediainfo_attr_reader :audio_format
+  mediainfo_attr_reader :audio_format_profile
   mediainfo_attr_reader :audio_format_info, "Format/Info"
   mediainfo_attr_reader :audio_format_settings_endianness, "Format settings, Endianness"
   mediainfo_attr_reader :audio_format_settings_sign, "Format settings, Sign"
